@@ -82,6 +82,9 @@ if __name__ == "__main__":
 
     # инициализация потока видео
     logger.info("starting video stream...")
+    #rtsp_url = "rtsp://name:password/video"
+    # vs = VideoStream(rtsp_url).start()
+    # для взятие потока с ip-камеры
     vs = VideoStream(src=0).start()
 
     # циклю при рабочем потоке видео
